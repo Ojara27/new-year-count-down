@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+.generalCon {
+  max-width: 1500px;
+}
+@media (min-width: 992px) {
+  .generalCon {
+    min-width: 350px;
+  }
+}
+/* Header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4.5rem;
+}
+.logo h3 {
+  color: #ef1960;
+  font-size: 2rem;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+.icon.cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menuItems li {
+  margin-left: 2.7rem;
+  font-weight: 500;
+}
+.menuItems li a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.menuItems li a:hover {
+  color: #ff491e;
+  transition: 0.4s linear;
+}
+.btn {
+  background-color: #ff491e;
+  padding: 0.7rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: 0;
+  margin-left: 20rem;
+}
+@media (max-width: 992px) {
+  .btn {
+    margin-left: 0;
+  }
+}
+.btn a {
+  color: #fff;
+}
+/* Header section Ends here */
+
+/* Banner section starts here */
+.overlay-content {
+  background-color: rgba(21, 20, 20, 0.893);
+  height: 100vh;
+  width: 100%;
+
+}
+.my-social-links{
+  display: flex;
+  align-items: center;
+  gap: 3rem ;
+}
+.my-social-links i{
+  font-size: 3rem;
+}
+.banner {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0 1rem; */
+}
+h1 {
+  font-size: 3.7rem;
+  text-align: center;
+  font-weight: 700;
+}
+.banner-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.banner-con h2{
+  font-size: 2rem;
+  color: #e26f93;
+}
+.about-para {
+  font-size: 1.4rem;
+  text-align: center;
+  /* font-weight: 300; */
+  margin-top: 1rem;
+}
+
+.countdown {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+/* .countdown h2 {
+    
+  } */
+.times {
+  display: flex;
+  gap: 12rem;
+  margin-top: 1rem;
+}
+.times p {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+  }
+  .notification input {
+    width: 300px;
+    height: 40px;
+  }
+  .notification button {
+    width: 100px;
+    height: 40px;
+  }
+  .countdown {
+    margin-top: 2.5rem;
+    font-size: 8rem;
+  }
+}
+
+/* Bannner section Ends Here */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ri-instagram-line {
+  color: rgb(239, 63, 92);
+}
+.ri-twitter-line {
+  color: #4c8ccc;
+}
+.ri-telegram-line {
+  color: #4d97c5;
+}
+footer {
+  padding: 17rem 0 1rem 0;
+  /* margin-top: 13rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ==============The navbar Area For Mobile and desktop(when on mobile and desktop)=================== */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 3rem 2.5rem;
+  }
+  .icon {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 50vh;
+    width: 100%;
+    max-width: 200px;
+    background-color: #000;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    transition: all 0.4s ease;
+  }
+  .menuItems {
+    display: block;
+  }
+  .menuItems li {
+    margin-bottom: 2.5rem;
+  }
+  .navbar .menu-list.active {
+    right: 0%;
+  }
+  .navbar .menu-list li a {
+    font-size: 1.2rem;
+  }
+}
