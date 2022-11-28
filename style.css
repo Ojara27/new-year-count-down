@@ -108,6 +108,14 @@ header {
 }
 .my-social-links i{
   font-size: 3rem;
+
+}
+/* .my-social-links a i{
+  color: rgb(128, 128, 128);
+} */
+.my-social-links a:hover , footer a:hover{
+  color: #ef1960;
+  transition: .5s ease;
 }
 .banner {
   height: 80vh;
@@ -145,9 +153,6 @@ h1 {
   font-size: 2rem;
   font-weight: 500;
 }
-/* .countdown h2 {
-    
-  } */
 .times {
   display: flex;
   gap: 12rem;
@@ -163,40 +168,17 @@ h1 {
   h1 {
     font-size: 6rem;
   }
-  .notification input {
-    width: 300px;
-    height: 40px;
-  }
-  .notification button {
-    width: 100px;
-    height: 40px;
-  }
   .countdown {
     margin-top: 2.5rem;
     font-size: 8rem;
   }
+
 }
 
-/* Bannner section Ends Here */
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.ri-instagram-line {
-  color: rgb(239, 63, 92);
-}
-.ri-twitter-line {
-  color: #4c8ccc;
-}
-.ri-telegram-line {
-  color: #4d97c5;
-}
+
 footer {
   padding: 17rem 0 1rem 0;
-  /* margin-top: 13rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,46 +189,13 @@ footer p {
   text-align: center;
   margin-bottom: 1rem;
 }
-
-/* ==============The navbar Area For Mobile and desktop(when on mobile and desktop)=================== */
-@media (max-width: 991px) {
-  .navbar {
-    padding: 3rem 2.5rem;
+@media (max-width: 576px) {
+  .times {
+    gap: 2rem;
+    margin-top: 1rem;
   }
-  .icon {
-    display: block;
-  }
-  .icon.hide {
-    display: none;
-  }
-  .navbar .menu-list {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 50vh;
-    width: 100%;
-    max-width: 200px;
-    background-color: #000;
-    display: block;
-    padding: 40px 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2.5rem;
-    transition: all 0.4s ease;
-  }
-  .menuItems {
-    display: block;
-  }
-  .menuItems li {
-    margin-bottom: 2.5rem;
-  }
-  .navbar .menu-list.active {
-    right: 0%;
-  }
-  .navbar .menu-list li a {
-    font-size: 1.2rem;
+  footer {
+    padding: 7rem 0 1rem 0;
+    margin-top: 4rem;
   }
 }
